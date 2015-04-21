@@ -1,11 +1,15 @@
 package main
 
-import "fmt"
+import (
+	_ "fmt"
+	"log"
+	"os"
+)
 
 func init() {
-	fmt.Println("hello init.")
+	log.SetOutput(os.Stdout)
 }
 
 func main() {
-	fmt.Println("Hello Go world.")
+	log.Println("Hello Go world.")
 }
