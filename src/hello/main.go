@@ -3,6 +3,7 @@ package main
 import (
 	_ "fmt"
 	"log"
+	"my_math"
 	"os"
 )
 
@@ -11,5 +12,5 @@ func init() {
 }
 
 func main() {
-	log.Println("Hello Go world.")
+	my_math.Fib(8)
 }
